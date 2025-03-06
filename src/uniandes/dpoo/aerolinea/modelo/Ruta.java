@@ -42,7 +42,7 @@ public class Ruta
 		return destino;
 	}
 
-	public int getDuracion(String horaCompleta)
+	public int getDuracion()
 	{
 		int duracion = 0;
 		int hora1 = Ruta.getHoras(horaSalida);
@@ -61,7 +61,7 @@ public class Ruta
 		int min2 = Ruta.getMinutos(horaLlegada);
 		int minTotal = Math.abs(min2 - min1);
 		
-		duracion = horasAMin * minTotal;
+		duracion = horasAMin + minTotal;
 		
 		return duracion;
 	}
