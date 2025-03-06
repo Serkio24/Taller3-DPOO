@@ -58,4 +58,10 @@ public class ClienteCorporativo extends Cliente
 	public int getTamanoEmpresa() {
 		return this.tamanoEmpresa;
 	}
+	
+	@Override
+    public String getIdentificador()
+    {
+        return this.nombreEmpresa;
+    }
 }

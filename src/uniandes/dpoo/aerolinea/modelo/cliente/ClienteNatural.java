@@ -18,8 +18,7 @@ public class ClienteNatural extends Cliente {
 
 	@Override
 	public String getIdentificador() {
-		return null;
+		return this.nombre;
 	}
 	
-	p
 }
